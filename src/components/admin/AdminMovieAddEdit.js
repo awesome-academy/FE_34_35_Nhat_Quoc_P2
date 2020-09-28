@@ -14,6 +14,7 @@ import {
   getTime,
   getType,
 } from "../../redux/slice/adminMovieAddEditSlice";
+import HeaderTopBar from "../partials/HeaderTopBar";
 
 export default function AdminMovieAddEdit() {
   const { t } = useTranslation("common");
@@ -80,61 +81,64 @@ export default function AdminMovieAddEdit() {
   };
 
   return (
-    <div className="admin-movie-add-edit">
-      <form onSubmit={onSubmit}>
-        <label>{t("admin.image")}</label>
-        <input
-          type="text"
-          value={image}
-          onChange={(e) => dispatch(getImage(e.target.value))}
-        />
-        <label>{t("admin.name")}</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => dispatch(getName(e.target.value))}
-        />
-        <label>{t("admin.ratings")}</label>
-        <input
-          type="text"
-          value={ratings}
-          onChange={(e) => dispatch(getratings(e.target.value))}
-        />
-        <label>{t("admin.time")}</label>
-        <input
-          type="text"
-          value={time}
-          onChange={(e) => dispatch(getTime(e.target.value))}
-        />
-        <label>{t("admin.producer")}</label>
-        <input
-          type="text"
-          value={producer}
-          onChange={(e) => dispatch(getproducer(e.target.value))}
-        />
-        <label>{t("admin.type")}</label>
-        <input
-          type="text"
-          value={type}
-          onChange={(e) => dispatch(getType(e.target.value))}
-        />
-        <label>{t("admin.actor")}</label>
-        <input
-          type="text"
-          value={actor}
-          onChange={(e) => dispatch(getActor(e.target.value))}
-        />
-        <label>{t("admin.releaseDate")}</label>
-        <input
-          type="date"
-          value={releaseDate}
-          onChange={(e) => dispatch(getReleaseDate(e.target.value))}
-        />
+    <div>
+      <HeaderTopBar />
+      <div className="admin-movie-add-edit">
+        <form onSubmit={onSubmit}>
+          <label>{t("admin.image")}</label>
+          <input
+            type="text"
+            value={image}
+            onChange={(e) => dispatch(getImage(e.target.value))}
+          />
+          <label>{t("admin.name")}</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => dispatch(getName(e.target.value))}
+          />
+          <label>{t("admin.ratings")}</label>
+          <input
+            type="text"
+            value={ratings}
+            onChange={(e) => dispatch(getratings(e.target.value))}
+          />
+          <label>{t("admin.time")}</label>
+          <input
+            type="text"
+            value={time}
+            onChange={(e) => dispatch(getTime(e.target.value))}
+          />
+          <label>{t("admin.producer")}</label>
+          <input
+            type="text"
+            value={producer}
+            onChange={(e) => dispatch(getproducer(e.target.value))}
+          />
+          <label>{t("admin.type")}</label>
+          <input
+            type="text"
+            value={type}
+            onChange={(e) => dispatch(getType(e.target.value))}
+          />
+          <label>{t("admin.actor")}</label>
+          <input
+            type="text"
+            value={actor}
+            onChange={(e) => dispatch(getActor(e.target.value))}
+          />
+          <label>{t("admin.releaseDate")}</label>
+          <input
+            type="date"
+            value={releaseDate}
+            onChange={(e) => dispatch(getReleaseDate(e.target.value))}
+          />
 
-        <button className="submit" type="submit">
-          {movieId ? t("admin.editMovie") : t("admin.addMovie")}
-        </button>
-      </form>
+          <button className="submit" type="submit">
+            {movieId ? t("admin.editMovie") : t("admin.addMovie")}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

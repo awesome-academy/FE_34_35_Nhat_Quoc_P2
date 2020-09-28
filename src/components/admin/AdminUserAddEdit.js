@@ -12,7 +12,9 @@ import {
   getPassword,
   getPhone,
   getRegion,
+  getToken,
 } from "../../redux/slice/adminUserAddEditSlice";
+import HeaderTopBar from "../partials/HeaderTopBar";
 
 export default function AdminUserAddEdit() {
   const { t } = useTranslation("common");
@@ -35,6 +37,7 @@ export default function AdminUserAddEdit() {
     region,
     birthday,
     gender,
+    token,
   } = useSelector((state) => state.userAddEdit);
 
   useEffect(() => {
@@ -51,6 +54,7 @@ export default function AdminUserAddEdit() {
         gender: "",
       };
       dispatch(getAll(emptyUser));
+      dispatch(getToken());
     }
   }, [dispatch, userEdit, userId]);
 
@@ -72,6 +76,8 @@ export default function AdminUserAddEdit() {
         alert(res);
       } else {
         alert("Register Success");
+        // reset again to add token admin
+        localStorage.setItem("token", token);
         history.push("/admin/usersManagement");
       }
     } else {
@@ -81,62 +87,65 @@ export default function AdminUserAddEdit() {
   };
 
   return (
-    <div className="admin-user-add-edit">
-      <form onSubmit={onSubmit}>
-        <label>{t("admin.name")}</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => dispatch(getName(e.target.value))}
-        />
-        <label>{t("admin.email")}</label>
-        <input
-          type="text"
-          value={email}
-          onChange={(e) => dispatch(getEmail(e.target.value))}
-        />
-        <label>{t("admin.password")}</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => dispatch(getPassword(e.target.value))}
-        />
-        <label>{t("admin.phone")}</label>
-        <input
-          type="text"
-          value={phone}
-          onChange={(e) => dispatch(getPhone(e.target.value))}
-        />
-        <label>{t("admin.region")}</label>
-        <select
-          value={region}
-          onChange={(e) => dispatch(getRegion(e.target.value))}
-        >
-          <option value="" disabled></option>
-          <option value={t("admin.hcm")}>{t("admin.hcm")}</option>
-          <option value={t("admin.hn")}>{t("admin.hn")}</option>
-          <option value={t("admin.dn")}>{t("admin.dn")}</option>
-        </select>
-        <label>{t("admin.birthday")}</label>
-        <input
-          type="date"
-          value={birthday}
-          onChange={(e) => dispatch(getBirthday(e.target.value))}
-        />
-        <label>{t("admin.gender")}</label>
-        <select
-          value={gender}
-          onChange={(e) => dispatch(getGender(e.target.value))}
-        >
-          <option value="" disabled></option>
-          <option value="male">{t("admin.male")}</option>
-          <option value="female">{t("admin.female")}</option>
-        </select>
+    <div>
+      <HeaderTopBar />
+      <div className="admin-user-add-edit">
+        <form onSubmit={onSubmit}>
+          <label>{t("admin.name")}</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => dispatch(getName(e.target.value))}
+          />
+          <label>{t("admin.email")}</label>
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => dispatch(getEmail(e.target.value))}
+          />
+          <label>{t("admin.password")}</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => dispatch(getPassword(e.target.value))}
+          />
+          <label>{t("admin.phone")}</label>
+          <input
+            type="text"
+            value={phone}
+            onChange={(e) => dispatch(getPhone(e.target.value))}
+          />
+          <label>{t("admin.region")}</label>
+          <select
+            value={region}
+            onChange={(e) => dispatch(getRegion(e.target.value))}
+          >
+            <option value="" disabled></option>
+            <option value={t("admin.hcm")}>{t("admin.hcm")}</option>
+            <option value={t("admin.hn")}>{t("admin.hn")}</option>
+            <option value={t("admin.dn")}>{t("admin.dn")}</option>
+          </select>
+          <label>{t("admin.birthday")}</label>
+          <input
+            type="date"
+            value={birthday}
+            onChange={(e) => dispatch(getBirthday(e.target.value))}
+          />
+          <label>{t("admin.gender")}</label>
+          <select
+            value={gender}
+            onChange={(e) => dispatch(getGender(e.target.value))}
+          >
+            <option value="" disabled></option>
+            <option value={t("admin.male")}>{t("admin.male")}</option>
+            <option value={t("admin.female")}>{t("admin.female")}</option>
+          </select>
 
-        <button className="submit" type="submit">
-          {userId ? t("admin.editUser") : t("admin.addUser")}
-        </button>
-      </form>
+          <button className="submit" type="submit">
+            {userId ? t("admin.editUser") : t("admin.addUser")}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

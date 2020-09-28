@@ -69,9 +69,9 @@ export default function AdminRevenueManagement() {
                       <tr key={i}>
                         <td>{e.id}</td>
                         <td>{e.timeSet}</td>
-                        <td>{e.movieName}</td>
-                        <td>{e.movieCinema}</td>
-                        <td>{e.total}</td>
+                        <td>{e.totalTicket}</td>
+                        <td>{e.totalCombo1 + e.totalCombo2}</td>
+                        <td>{e.totalTicket + e.totalCombo1 + e.totalCombo2}</td>
                       </tr>
                     ))}
                   </tbody>
