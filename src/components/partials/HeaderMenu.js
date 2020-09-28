@@ -22,41 +22,19 @@ const HeaderMenu = () => {
                     <Link to="/" className="active menu__list--link">
                       {t("menu.home")}
                     </Link>
-                    <ul className="menu__sub">
-                      <li className="menu__sub--list">
-                        <Link to="/" className="active menu__sub--link">
-                          {t("menu.home")} 1
-                        </Link>
-                      </li>
-                      <li className="menu__sub--list">
-                        <Link to="/" className="menu__sub--link">
-                          {t("menu.home")} 2
-                        </Link>
-                      </li>
-                      <li className="menu__sub--list">
-                        <Link to="/" className="menu__sub--link">
-                          {t("menu.home")} 3
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
                   <li className="menu__list">
-                    <Link className="menu__list--link" to="/">
-                      {t("menu.buyTicket")}
-                    </Link>
-                  </li>
-                  <li className="menu__list">
-                    <Link className="menu__list--link" to="/">
+                    <Link to="/movies-list" className="menu__list--link">
                       {t("menu.movie")}
                     </Link>
                   </li>
                   <li className="menu__list">
-                    <Link className="menu__list--link" to="/">
-                      {t("menu.cinema")}
+                    <Link to="/" className="menu__list--link">
+                      {t("menu.buyTicket")}
                     </Link>
                   </li>
                   <li className="menu__list">
-                    <Link className="menu__list--link" to="/">
+                    <Link to="/" className="menu__list--link">
                       {t("menu.member")}
                     </Link>
                   </li>

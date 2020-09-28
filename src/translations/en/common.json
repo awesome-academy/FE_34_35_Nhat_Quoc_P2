@@ -68,7 +68,7 @@
   },
 
   "titleSection": {
-    "blog" : "Blog",
+    "blog": "Blog",
     "movie": "Movie",
     "newest": "Newest",
     "new": "New",
@@ -98,5 +98,12 @@
     "address": "65 Yên Thế, Đà Nẵng",
     "gmail": "abc@gmail.com",
     "phone": "0123 456 789"
+  },
+
+  "breadcrumbs": {
+    "home": "Home",
+    "listMovie": "List Movie",
+    "listDetails": "List Details",
+    "buyTicket": "Buy ticket"
   }
 }

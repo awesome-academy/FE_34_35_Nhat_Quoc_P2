@@ -1,27 +1,36 @@
-@mixin font-face($name) {
-  @font-face {
-    font-family: $name;
-    src: url("../../assets/fonts/#{$name}.ttf");
+@mixin flex($justify: space-between, $wrap: nowrap, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin grid($col) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-gap: 30px;
+}
+
+.trans {
+  $webs: -moz-, -ms-, -o-, -webkit-, space;
+  @each $web in $webs {
+    @if $web == space {
+      transition: all 0.3s ease-in-out;
+    } @else {
+      #{$web}transition: all 0.3s ease-in-out;
+    }
   }
 }
 
-@mixin pl-pr($pl, $pr) {
-  padding-left: $pl;
-  padding-right: $pr;
-}
-@mixin pt-pb($pt, $pb) {
-  padding-top: $pt;
-  padding-bottom: $pb;
-}
-
-@mixin ml-mr($ml, $mr) {
-  margin-left: $ml;
-  margin-right: $mr;
-}
-
-@mixin mt-mb($mt, $mb) {
-  margin-top: $mt;
-  margin-bottom: $mb;
+@mixin b_shadow {
+  $webs: -moz-, -webkit-, space;
+  @each $web in $webs {
+    @if $web == space {
+      box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    } @else {
+      #{$web}box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 @mixin flex($justify: space-between, $wrap: nowrap, $align: center) {
@@ -68,4 +77,30 @@
       #{$web}transform: scale(1.1);
     }
   }
+}
+
+@mixin font-face($name) {
+  @font-face {
+    font-family: $name;
+    src: url("../../assets/fonts/#{$name}.ttf");
+  }
+}
+
+@mixin pl-pr($pl, $pr) {
+  padding-left: $pl;
+  padding-right: $pr;
+}
+@mixin pt-pb($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin ml-mr($ml, $mr) {
+  margin-left: $ml;
+  margin-right: $mr;
+}
+
+@mixin mt-mb($mt, $mb) {
+  margin-top: $mt;
+  margin-bottom: $mb;
 }

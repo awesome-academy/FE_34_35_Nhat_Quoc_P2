@@ -3,15 +3,15 @@
 @import "./base/_placeholders";
 @import "./base/_global";
 
-@import "./layouts/_admin-slide-bar";
-@import "./layouts/_admin-management";
-@import "./layouts/_header-top-bar";
-
 @import "./pages/_admin";
 @import "./pages/_register";
 @import "./pages/_login";
 @import "./pages/_error404";
+@import "./pages/_movie-list";
 
+@import "./layouts/_admin-slide-bar";
+@import "./layouts/_admin-management";
+@import "./layouts/_header-top-bar";
 @import "./layouts/_login";
 @import "./layouts/_register";
 @import "./layouts/_movie-video";
