@@ -6,9 +6,9 @@ import AdminRevenueManagement from "./components/pages/AdminRevenueManagement";
 import AdminTicketsManagement from "./components/pages/AdminTicketsManagement";
 import AdminUsersManagement from "./components/pages/AdminUsersManagement";
 import Error404 from "./components/pages/Error404";
+import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
-import HeaderTopBar from "./components/partials/HeaderTopBar";
 
 const routersAdmin = [
   {
@@ -54,7 +54,7 @@ const routersAdmin = [
   {
     path: "/",
     exact: true,
-    main: () => <HeaderTopBar />,
+    main: () => <Home/>
   },
   {
     path: "/login",

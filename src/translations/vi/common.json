@@ -55,6 +55,48 @@
   },
 
   "headerTopBar": {
-    "search": "Tìm kiếm phim..."
+    "search": "Tìm kiếm phim...",
+    "register": "Đăng ký"
+  },
+
+  "menu": {
+    "home": "Trang chủ",
+    "buyTicket": "Mua vé",
+    "movie": "Phim",
+    "cinema": "Rạp",
+    "member": "Thành Viên"
+  },
+
+  "titleSection": {
+    "blog" : "Nhật Kí",
+    "movie": "Phim",
+    "newest": "Mới nhất",
+    "new": "Mới",
+    "promotion": "Khuyến mãi"
+  },
+
+  "video": {
+    "videoPlay": "Xem video",
+    "bymoviak": "Bymoviak"
+  },
+
+  "widget": {
+    "description": "Rất hân hạnh được phục vụ các bạn !",
+
+    "introduce": "Giới thiệu",
+    "cinemaCorner": "Góc rạp chiếu phim",
+    "support": "Hỗ trợ",
+
+    "aboutUs": "Về chúng tôi",
+    "convenient": "Thuận tiện để sử dụng",
+    "regulation": "Quy chế hoạt động",
+    "privacyPolicy": "Chính sách bảo mật",
+    "movieGenre": "Thể loại phim",
+    "movieCommentary": "Bình luận phim",
+    "blogMovies": "Blog phim",
+    "movieMonth": "Phim tháng hay",
+    "address": "65 Yên Thế, Đà Nẵng",
+    "gmail": "abc@gmail.com",
+    "phone": "0123 456 789"
   }
 }
