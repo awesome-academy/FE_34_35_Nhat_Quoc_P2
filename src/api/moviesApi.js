@@ -11,6 +11,11 @@ const moviesApi = {
     return axiosClient.get(url);
   },
 
+  getMovieDetail: (movieId) => {
+    const url = `/movies/${movieId}`;
+    return axiosClient.get(url);
+  },
+
   getMovieSearch: (searchMovie) => {
     const url = `/movies?q=${searchMovie}`;
     return axiosClient.get(url);

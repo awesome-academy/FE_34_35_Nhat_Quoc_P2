@@ -10,6 +10,7 @@ import slidesReducer from "./slice/slidesSlice";
 import newPromotionReducer from "./slice/newPromotionSlice";
 import blogReducer from "./slice/blogSlice";
 import moviesReducer from "./slice/moviesSlice";
+import cinemasReducer from "./slice/cinemasSlice";
 
 const store = configureStore({
   reducer: {
@@ -24,6 +25,7 @@ const store = configureStore({
     blogs: blogReducer,
     slides: slidesReducer,
     movies: moviesReducer,
+    cinemas: cinemasReducer,
   },
 });
 export default store;

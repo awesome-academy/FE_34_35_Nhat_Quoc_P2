@@ -11,15 +11,19 @@ export const getMoviesHome = createAsyncThunk("getMoviesHome", async () => {
   return currentMoviesHome;
 });
 
-export const getMovieDetail = createAsyncThunk("getMovieDetail", async () => {
-  const currentMovieDetail = await moviesApi.getMovieDetail();
-  return currentMovieDetail;
-});
+export const getMovieDetail = createAsyncThunk(
+  "getMovieDetail",
+  async (movieId) => {
+    const currentMovieDetail = await moviesApi.getMovieDetail(movieId);
+    return currentMovieDetail;
+  }
+);
 
 const moviesSlice = createSlice({
   name: "moviesSlice",
   initialState: {
     movies: [],
+    movieDetail: [],
     loading: false,
     error: "",
   },
@@ -27,6 +31,9 @@ const moviesSlice = createSlice({
     removeMovie: (state, action) => {
       const removeMoveId = action.payload;
       state.movies = state.movies.filter((e) => e.id !== removeMoveId);
+    },
+    getMovieDetailEmpty: (state, action) => {
+      state.movieDetail = [];
     },
   },
   extraReducers: {
@@ -68,12 +75,12 @@ const moviesSlice = createSlice({
     },
 
     [getMovieDetail.fulfilled]: (state, action) => {
-      state.movies = action.payload;
       state.loading = false;
+      state.movieDetail.push(action.payload);
     },
   },
 });
 
 const { reducer: moviesReducer, actions } = moviesSlice;
-export const { removeMovie } = actions;
+export const { removeMovie, getMovieDetailEmpty } = actions;
 export default moviesReducer;

@@ -86,6 +86,7 @@
     "introduce": "Giới thiệu",
     "cinemaCorner": "Góc rạp chiếu phim",
     "support": "Hỗ trợ",
+    "recentPosts": "Bài viết gần đây",
 
     "aboutUs": "Về chúng tôi",
     "convenient": "Thuận tiện để sử dụng",
@@ -105,5 +106,15 @@
     "listMovie": "Liệt kê phim",
     "listDetails": "Chi tiết phim",
     "buyTicket": "Mua vé"
+  },
+
+  "movieDetail": {
+    "minutes": "Phút",
+    "releaseDate": "Ngày phát hành",
+    "genre": "Thể loại",
+    "actor": "Diễn viên",
+    "director": "Đạo diễn",
+    "title": "Thời gian chiếu",
+    "trailer": "Giới thiệu tóm tắt"
   }
 }

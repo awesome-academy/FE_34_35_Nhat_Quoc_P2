@@ -86,6 +86,45 @@
   }
 }
 
+@mixin grid($col) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-gap: 30px;
+}
+
+.trans {
+  $webs: -moz-, -ms-, -o-, -webkit-, space;
+  @each $web in $webs {
+    @if $web == space {
+      transition: all 0.3s ease-in-out;
+    } @else {
+      #{$web}transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+@mixin b_shadow {
+  $webs: -moz-, -webkit-, space;
+  @each $web in $webs {
+    @if $web == space {
+      box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    } @else {
+      #{$web}box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@mixin tr_scale {
+  $webs: -moz-, -ms-, -o-, -webkit-, space;
+  @each $web in $webs {
+    @if $web == space {
+      transform: scale(1.1);
+    } @else {
+      #{$web}transform: scale(1.1);
+    }
+  }
+}
+
 @mixin pl-pr($pl, $pr) {
   padding-left: $pl;
   padding-right: $pr;

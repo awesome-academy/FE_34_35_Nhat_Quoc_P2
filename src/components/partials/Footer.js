@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="widget__col">
               <div className="widget__logo">
                 <Link to="/" title="Logo">
-                  <img src="assets/images/logo/02.png" alt="images" />
+                  <img src="../assets/images/logo/02.png" alt="images" />
                 </Link>
               </div>
               <p className="widget__description">{t("widget.description")}</p>

@@ -11,7 +11,7 @@ const HeaderMenu = () => {
         <div className="header__flex">
           <div className="header__logo">
             <Link to="/" title="Logo">
-              <img src="assets/images/logo/01.png" alt="images" />
+              <img src="../assets/images/logo/01.png" alt="images" />
             </Link>
           </div>
           <div className="menu__content">
@@ -26,11 +26,6 @@ const HeaderMenu = () => {
                   <li className="menu__list">
                     <Link to="/movies-list" className="menu__list--link">
                       {t("menu.movie")}
-                    </Link>
-                  </li>
-                  <li className="menu__list">
-                    <Link to="/" className="menu__list--link">
-                      {t("menu.buyTicket")}
                     </Link>
                   </li>
                   <li className="menu__list">

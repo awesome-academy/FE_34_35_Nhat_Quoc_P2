@@ -8,6 +8,7 @@ import AdminUsersManagement from "./components/pages/AdminUsersManagement";
 import Error404 from "./components/pages/Error404";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
+import MovieDetail from "./components/pages/MovieDetail";
 import MovieList from "./components/pages/MovieList";
 import Register from "./components/pages/Register";
 
@@ -51,6 +52,11 @@ const routers = [
     path: "/admin/usersManagement/add",
     exact: true,
     main: () => <AdminUserAddEdit />,
+  },
+  {
+    path: "/movie-detail/:movieId",
+    exact: true,
+    main: () => <MovieDetail />,
   },
   {
     path: "/movies-list",
