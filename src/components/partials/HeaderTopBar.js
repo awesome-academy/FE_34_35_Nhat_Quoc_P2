@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import moviesApi from "../../api/moviesApi";
+import { getChange } from "../../redux/slice/i18nSlice";
 import {
   getSearchMovie,
   getListMovie,
@@ -16,6 +17,7 @@ const HeaderTopBar = () => {
   const dispatch = useDispatch();
 
   const { searchMovie, listMovie } = useSelector((state) => state.searchMovie);
+  const { status } = useSelector((state) => state.i18n);
 
   const token = localStorage.getItem("token");
 
@@ -28,7 +30,7 @@ const HeaderTopBar = () => {
   }, [dispatch, searchMovie]);
 
   const handleLogOut = () => {
-    localStorage.removeItem("token");
+    localStorage.clear();
     history.push("/");
   };
 
@@ -41,6 +43,16 @@ const HeaderTopBar = () => {
         </Link>
       </li>
     ));
+  };
+
+  const handleVi = () => {
+    i18n.changeLanguage("vi");
+    dispatch(getChange(true));
+  };
+
+  const handleEn = () => {
+    i18n.changeLanguage("en");
+    dispatch(getChange(false));
   };
 
   return (
@@ -87,14 +99,22 @@ const HeaderTopBar = () => {
 
             <div className="topbar__language">
               <button
-                className="topbar__language--vn"
-                onClick={() => i18n.changeLanguage("vi")}
+                className={
+                  status === true
+                    ? "topbar__language--vn active"
+                    : "topbar__language--vn"
+                }
+                onClick={handleVi}
               >
                 VN
               </button>
               <button
-                className="topbar__language--en"
-                onClick={() => i18n.changeLanguage("en")}
+                className={
+                  status === false
+                    ? "topbar__language--en active"
+                    : "topbar__language--en"
+                }
+                onClick={handleEn}
               >
                 EN
               </button>

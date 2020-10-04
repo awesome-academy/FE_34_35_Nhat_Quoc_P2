@@ -10,6 +10,7 @@ const adminUserAddEditSlice = createSlice({
     region: "",
     birthday: "",
     gender: "",
+    token: "",
   },
   reducers: {
     getAll: (state, action) => {
@@ -42,6 +43,9 @@ const adminUserAddEditSlice = createSlice({
     getGender: (state, action) => {
       state.gender = action.payload;
     },
+    getToken: (state, action) => {
+      state.token = localStorage.getItem("token");
+    },
   },
 });
 
@@ -55,5 +59,6 @@ export const {
   getRegion,
   getBirthday,
   getGender,
+  getToken,
 } = actions;
 export default userAddEditReducer;
