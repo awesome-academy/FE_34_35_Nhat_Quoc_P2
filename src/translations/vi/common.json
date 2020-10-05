@@ -68,7 +68,7 @@
   },
 
   "titleSection": {
-    "blog" : "Nhật Kí",
+    "blog": "Nhật Kí",
     "movie": "Phim",
     "newest": "Mới nhất",
     "new": "Mới",
@@ -98,5 +98,12 @@
     "address": "65 Yên Thế, Đà Nẵng",
     "gmail": "abc@gmail.com",
     "phone": "0123 456 789"
+  },
+
+  "breadcrumbs": {
+    "home": "Trang chủ",
+    "listMovie": "Liệt kê phim",
+    "listDetails": "Chi tiết phim",
+    "buyTicket": "Mua vé"
   }
 }

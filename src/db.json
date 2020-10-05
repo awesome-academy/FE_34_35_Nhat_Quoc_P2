@@ -115,6 +115,7 @@
       "image": "https://galaxycine.vn/media/2020/9/9/banner-2048x682_1599634539410.jpg"
     }
   ],
+
   "movies": [
     {
       "id": 1,
@@ -172,6 +173,7 @@
       "releaseDate": "18/9/2020"
     }
   ],
+
   "blogs": [
     {
       "id": 1,
@@ -198,6 +200,7 @@
       "content": "Nghe thú vị đấy chứ, không biết “người hùng chạy” sẽ đảm nhiệm vai trò như thế nào nếu tham gia vào vũ trụ điện ảnh Marvel nhỉ?"
     }
   ],
+
   "promotion": [
     {
       "id": 1,
