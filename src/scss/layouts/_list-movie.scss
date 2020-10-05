@@ -1,0 +1,85 @@
+.list-movie {
+	&__grid {
+		@include grid(2fr 1fr);
+	}
+	&__box {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+		overflow: hidden;
+		border-bottom: 1px solid $border-list-movie;
+		&:last-child {
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+	}
+	&__poster {
+		width: 250px;
+		float: left;
+	}
+	&__content {
+		width: calc(100% - 250px);
+		overflow: hidden;
+		padding: 0 0 15px 30px;
+	}
+	&__title {
+		margin-bottom: 5px;
+		a {
+			font-size: 20px;
+			font-weight: $font-weight7;
+		}
+	}
+	&__rating {
+		margin-bottom: 10px;
+		span {
+			margin-right: 10px;
+		}
+		&--icon {
+			color: $color-movie-rating;
+		}
+	}
+	&__time {
+		color: $color-main;
+		margin-bottom: 20px;
+	}
+	&__description {
+		margin-bottom: 15px;
+	}
+	&__info {
+		margin-bottom: 5px;
+		label {
+			color: $color-movie-info;
+		}
+		.text {
+			color: $color-black;
+		}
+	}
+	&__button {
+		margin-top: 20px;
+		a {
+			position: relative;
+			padding-left: 30px;
+			margin-right: 20px;
+			&:before {
+				content: "\f04b";
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 10px;
+				border-radius: 50%;
+				text-align: center;
+				color: $color-white;
+				display: inline-block;
+				font-family: "Fontawesome";
+				background-color: $bg-main;
+			}
+		}
+	}
+	&__det {
+		content: "\f129";
+	}
+}

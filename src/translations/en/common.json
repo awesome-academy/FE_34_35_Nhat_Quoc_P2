@@ -55,6 +55,48 @@
   },
 
   "headerTopBar": {
-    "search": "Search Movie..."
+    "search": "Search Movie...",
+    "register": "Register"
+  },
+
+  "menu": {
+    "home": "Home",
+    "buyTicket": "Buy Ticket",
+    "movie": "Movie",
+    "cinema": "Cinema",
+    "member": "Member"
+  },
+
+  "titleSection": {
+    "blog" : "Blog",
+    "movie": "Movie",
+    "newest": "Newest",
+    "new": "New",
+    "promotion": "Promotion"
+  },
+
+  "video": {
+    "videoPlay": "video play",
+    "bymoviak": "Bymoviak"
+  },
+
+  "widget": {
+    "description": "Very pleased to serve you !",
+
+    "introduce": "Introduce",
+    "cinemaCorner": "Cinema Corner",
+    "support": "Support",
+
+    "aboutUs": "About us",
+    "convenient": "Convenient to use",
+    "regulation": "Operation regulation",
+    "privacyPolicy": "Privacy Policy",
+    "movieGenre": "Movie genre",
+    "movieCommentary": "Movie commentary",
+    "blogMovies": "Blog movies",
+    "movieMonth": "Good movie month",
+    "address": "65 Yên Thế, Đà Nẵng",
+    "gmail": "abc@gmail.com",
+    "phone": "0123 456 789"
   }
 }

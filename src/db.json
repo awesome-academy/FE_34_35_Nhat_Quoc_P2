@@ -117,110 +117,83 @@
   ],
   "movies": [
     {
+      "id": 1,
       "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim1",
-      "ratings": "51",
-      "time": "97",
+      "name": "Xứ sở phép thuật",
+      "ratings": 5,
+      "time": 97,
       "producer": "Rat Pack Filmproduktion",
       "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
       "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 1
+      "releaseDate": "18/9/2020"
     },
     {
+      "id": 2,
       "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim2",
-      "ratings": "51",
-      "time": "97",
+      "name": "Xứ sở phép thuật",
+      "ratings": 5,
+      "time": 97,
       "producer": "Rat Pack Filmproduktion",
       "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
       "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 2
+      "releaseDate": "18/9/2020"
     },
     {
+      "id": 3,
       "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim3",
-      "ratings": "51",
-      "time": "97",
+      "name": "Xứ sở phép thuật",
+      "ratings": 5,
+      "time": 97,
       "producer": "Rat Pack Filmproduktion",
       "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
       "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 3
+      "releaseDate": "18/9/2020"
     },
     {
+      "id": 4,
       "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim4",
-      "ratings": "51",
-      "time": "97",
+      "name": "Xứ sở phép thuật",
+      "ratings": 5,
+      "time": 97,
       "producer": "Rat Pack Filmproduktion",
       "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
       "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 4
+      "releaseDate": "18/9/2020"
     },
     {
+      "id": 5,
       "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim1",
-      "ratings": "51",
-      "time": "97",
+      "name": "Xứ sở phép thuật",
+      "ratings": 5,
+      "time": 97,
       "producer": "Rat Pack Filmproduktion",
       "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
       "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 5
-    },
-    {
-      "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim2",
-      "ratings": "51",
-      "time": "97",
-      "producer": "Rat Pack Filmproduktion",
-      "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
-      "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 6
-    },
-    {
-      "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim3",
-      "ratings": "51",
-      "time": "97",
-      "producer": "Rat Pack Filmproduktion",
-      "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
-      "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 7
-    },
-    {
-      "image": "https://galaxycine.vn/media/2020/9/15/11_1600175675192.jpg",
-      "name": "phim4",
-      "ratings": "51",
-      "time": "97",
-      "producer": "Rat Pack Filmproduktion",
-      "type": "Phiêu Lưu, Gia Đình, Thần Thoại",
-      "actor": "Christian Berkel, Butz Ulrich Buse Director",
-      "releaseDate": "2020-09-08",
-      "id": 8
+      "releaseDate": "18/9/2020"
     }
   ],
   "blogs": [
     {
       "id": 1,
-      "image": "https://galaxycine.vn/media/2020/9/21/doctorstrange4_1600669259884.jpg",
+      "image": "https://www.galaxycine.vn/media/2020/9/28/450-james_1601263582784.jpg",
       "name": "Tom Cruise Sẽ Tham Gia Doctor Strange 2?",
       "content": "Nghe thú vị đấy chứ, không biết “người hùng chạy” sẽ đảm nhiệm vai trò như thế nào nếu tham gia vào vũ trụ điện ảnh Marvel nhỉ?"
     },
     {
       "id": 2,
-      "image": "https://galaxycine.vn/media/2020/9/21/doctorstrange4_1600669259884.jpg",
+      "image": "https://www.galaxycine.vn/media/2020/9/28/tindienanh450x300_1601262245555.png",
       "name": "Tom Cruise Sẽ Tham Gia Doctor Strange 2?",
       "content": "Nghe thú vị đấy chứ, không biết “người hùng chạy” sẽ đảm nhiệm vai trò như thế nào nếu tham gia vào vũ trụ điện ảnh Marvel nhỉ?"
     },
     {
       "id": 3,
-      "image": "https://galaxycine.vn/media/2020/9/21/doctorstrange4_1600669259884.jpg",
+      "image": "https://www.galaxycine.vn/media/2020/9/28/image_1601240213517.jpg",
+      "name": "Tom Cruise Sẽ Tham Gia Doctor Strange 2?",
+      "content": "Nghe thú vị đấy chứ, không biết “người hùng chạy” sẽ đảm nhiệm vai trò như thế nào nếu tham gia vào vũ trụ điện ảnh Marvel nhỉ?"
+    },
+    {
+      "id": 4,
+      "image": "https://www.galaxycine.vn/media/2020/9/25/robert-downey-jr-trying-to-revive-johnny-depps-career-with-this-film-001_1601018912431.jpg",
       "name": "Tom Cruise Sẽ Tham Gia Doctor Strange 2?",
       "content": "Nghe thú vị đấy chứ, không biết “người hùng chạy” sẽ đảm nhiệm vai trò như thế nào nếu tham gia vào vũ trụ điện ảnh Marvel nhỉ?"
     }
@@ -228,19 +201,25 @@
   "promotion": [
     {
       "id": 1,
-      "image": "https://www.galaxycine.vn/media/2020/9/16/1135x660_1600243608135.jpg",
+      "image": "https://www.galaxycine.vn/media/2020/9/16/300x450_1600243476498.jpg",
       "name": "Đua Top Săn Vàng - Nhận Ưu Đãi Tiếp Sức Từ Galaxy Cinema",
       "content": "Cặp nhẫn Doji trị giá 20 TRIỆU VNĐ, Movie Voucher đủ xem tới hết năm và Combo đặc biệt chưa-từng-có-tại-Việt-Nam... Đó là những phần quà siêu giá trị sẽ dành cho các Stars chiến thắng cuộc chơi ĐUA TOP SĂN VÀNG - Top thành viên chi tiêu cao nhất, tích lũy được nhiều Stars nhất từ 01/07 tới 30/09."
     },
     {
       "id": 2,
-      "image": "https://www.galaxycine.vn/media/2020/9/16/1135x660_1600243608135.jpg",
+      "image": "https://www.galaxycine.vn/media/2019/12/9/300x450_1575874237175.jpg",
       "name": "Đua Top Săn Vàng - Nhận Ưu Đãi Tiếp Sức Từ Galaxy Cinema",
       "content": "Cặp nhẫn Doji trị giá 20 TRIỆU VNĐ, Movie Voucher đủ xem tới hết năm và Combo đặc biệt chưa-từng-có-tại-Việt-Nam... Đó là những phần quà siêu giá trị sẽ dành cho các Stars chiến thắng cuộc chơi ĐUA TOP SĂN VÀNG - Top thành viên chi tiêu cao nhất, tích lũy được nhiều Stars nhất từ 01/07 tới 30/09."
     },
     {
       "id": 3,
-      "image": "https://www.galaxycine.vn/media/2020/9/16/1135x660_1600243608135.jpg",
+      "image": "https://www.galaxycine.vn/media/2020/9/3/300x450_1599120288127.jpg",
+      "name": "Đua Top Săn Vàng - Nhận Ưu Đãi Tiếp Sức Từ Galaxy Cinema",
+      "content": "Cặp nhẫn Doji trị giá 20 TRIỆU VNĐ, Movie Voucher đủ xem tới hết năm và Combo đặc biệt chưa-từng-có-tại-Việt-Nam... Đó là những phần quà siêu giá trị sẽ dành cho các Stars chiến thắng cuộc chơi ĐUA TOP SĂN VÀNG - Top thành viên chi tiêu cao nhất, tích lũy được nhiều Stars nhất từ 01/07 tới 30/09."
+    },
+    {
+      "id": 4,
+      "image": "https://www.galaxycine.vn/media/2020/9/21/300x450_1600679166207.jpg",
       "name": "Đua Top Săn Vàng - Nhận Ưu Đãi Tiếp Sức Từ Galaxy Cinema",
       "content": "Cặp nhẫn Doji trị giá 20 TRIỆU VNĐ, Movie Voucher đủ xem tới hết năm và Combo đặc biệt chưa-từng-có-tại-Việt-Nam... Đó là những phần quà siêu giá trị sẽ dành cho các Stars chiến thắng cuộc chơi ĐUA TOP SĂN VÀNG - Top thành viên chi tiêu cao nhất, tích lũy được nhiều Stars nhất từ 01/07 tới 30/09."
     }
@@ -431,8 +410,12 @@
       "movieTime": "20:00",
       "timeSet": "2019-08-05",
       "count": 1,
-      "combo": ["1 ly nước, 1 bắp"],
-      "seats": ["A01"],
+      "combo": [
+        "1 ly nước, 1 bắp"
+      ],
+      "seats": [
+        "A01"
+      ],
       "total": 100000,
       "payment": "Visa"
     },
@@ -445,8 +428,12 @@
       "movieTime": "20:00",
       "timeSet": "2019-08-05",
       "count": 1,
-      "combo": ["1 ly nước, 1 bắp"],
-      "seats": ["A01"],
+      "combo": [
+        "1 ly nước, 1 bắp"
+      ],
+      "seats": [
+        "A01"
+      ],
       "total": 100000,
       "payment": "Visa"
     }
