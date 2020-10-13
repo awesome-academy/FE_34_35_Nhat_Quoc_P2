@@ -41,7 +41,10 @@ const Movie = () => {
                   </Link>
                   <div className="movie__overlay">
                     <div className="movie__buy">
-                      <Link to="/" className="movie__buy--ticket">
+                      <Link
+                        to={`/movie-detail/${e.id}`}
+                        className="movie__buy--ticket"
+                      >
                         BUY TICKET
                       </Link>
                     </div>

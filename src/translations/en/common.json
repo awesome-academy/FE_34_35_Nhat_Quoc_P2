@@ -86,6 +86,7 @@
     "introduce": "Introduce",
     "cinemaCorner": "Cinema Corner",
     "support": "Support",
+    "recentPosts": "Recent Posts",
 
     "aboutUs": "About us",
     "convenient": "Convenient to use",
@@ -105,5 +106,15 @@
     "listMovie": "List Movie",
     "listDetails": "List Details",
     "buyTicket": "Buy ticket"
+  },
+
+  "movieDetail": {
+    "minutes": "Minutes",
+    "releaseDate": "Release Date",
+    "genre": "Genre",
+    "actor": "Actor",
+    "director": "Director",
+    "title": "Showtime",
+    "trailer": "Trailer"
   }
 }
